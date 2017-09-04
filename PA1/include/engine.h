@@ -11,6 +11,7 @@ class Engine
 {
   public:
     Engine(string name, int width, int height);
+		Engine(string name, int width, int height, char * vertexShader, char * fragmentShader);
     Engine(string name);
     ~Engine();
     bool Initialize();
@@ -32,6 +33,9 @@ class Engine
     unsigned int m_DT;
     long long m_currentTimeMillis;
     bool m_running;
+
+		char * m_fragmentShader;
+		char * m_vertexShader;
 };
 
 #endif // ENGINE_H

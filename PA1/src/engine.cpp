@@ -17,6 +17,18 @@ Engine::Engine(string name)
   m_FULLSCREEN = true;
 }
 
+Engine::Engine(string name, int width, int height, char * vertexShader, char * fragmentShader)
+{
+  m_WINDOW_NAME = name;
+  m_WINDOW_WIDTH = width;
+  m_WINDOW_HEIGHT = height;
+  m_FULLSCREEN = false;
+	cout << "Vertex Shader: " << vertexShader << endl;
+	cout << "Fragment Shader: " << vertexShader << endl;
+	m_vertexShader = vertexShader;
+	m_fragmentShader = fragmentShader;
+}
+
 Engine::~Engine()
 {
   delete m_window;
@@ -37,7 +49,7 @@ bool Engine::Initialize()
 
   // Start the graphics
   m_graphics = new Graphics();
-  if(!m_graphics->Initialize(m_WINDOW_WIDTH, m_WINDOW_HEIGHT))
+  if(!m_graphics->Initialize(m_WINDOW_WIDTH, m_WINDOW_HEIGHT, m_vertexShader, m_fragmentShader))
   {
     printf("The graphics failed to initialize.\n");
     return false;

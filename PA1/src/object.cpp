@@ -83,6 +83,7 @@ void Object::Update(unsigned int dt)
   float multiplier = 1000;
   float diameter = 10;
   angle += dt * M_PI/multiplier;
+  translation += dt * M_PI/multiplier;
   glm::mat4 translation = glm::translate(glm::vec3(sin(angle/10) * diameter, 0.0, cos(angle/10) * diameter));
   model = glm::rotate(translation, (angle), glm::vec3(0.0, 1.0, 0.0));
 }
