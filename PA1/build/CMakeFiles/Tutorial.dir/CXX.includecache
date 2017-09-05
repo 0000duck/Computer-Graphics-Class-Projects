@@ -24,15 +24,15 @@ glm/gtc/type_ptr.hpp
 glm/gtx/rotate_vector.hpp
 -
 
-../include/object.h
+../include/shader.h
 vector
+-
+fstream
 -
 graphics_headers.h
 ../include/graphics_headers.h
 
-/home/grant/Desktop/CS480/cs480Hooks/PA1/src/object.cpp
-object.h
-/home/grant/Desktop/CS480/cs480Hooks/PA1/src/object.h
-math.h
--
+/home/grant/Desktop/CS480/cs480Hooks/PA1/src/shader.cpp
+shader.h
+/home/grant/Desktop/CS480/cs480Hooks/PA1/src/shader.h
 

@@ -7,21 +7,16 @@ int main(int argc, char **argv)
 {
 	char * vertexShader;
 	char * fragmentShader;
-	
+
   // Start an engine and run it then cleanup after
 	for(int i = 0; i < argc; i++) {
-		cout << i << " arg: " << argv[i] << endl;
-		
+
 		if(string(argv[i]) == "-v") {
-			cout << "arg -v: " << argv[i]  << endl << "arg +1: " << argv[i+1] << endl;
 			vertexShader = argv[i+1];
-			cout << "Got Vertex Shader: " << vertexShader << endl;
 		}
 
 		if(string(argv[i]) == "-f") {
-			cout << "arg -f: " << argv[i]  << endl << "arg +1: " << argv[i+1] << endl;
 			fragmentShader = argv[i+1];
-			cout << "Got Fragment Shader: " << fragmentShader << endl;
 		}
 	}
 

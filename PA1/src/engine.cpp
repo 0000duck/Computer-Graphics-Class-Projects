@@ -23,8 +23,6 @@ Engine::Engine(string name, int width, int height, char * vertexShader, char * f
   m_WINDOW_WIDTH = width;
   m_WINDOW_HEIGHT = height;
   m_FULLSCREEN = false;
-	cout << "Vertex Shader: " << vertexShader << endl;
-	cout << "Fragment Shader: " << vertexShader << endl;
 	m_vertexShader = vertexShader;
 	m_fragmentShader = fragmentShader;
 }
