@@ -99,37 +99,37 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Tutorial
+# Target rules for targets named PA1
 
 # Build rule for target.
-Tutorial: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Tutorial
-.PHONY : Tutorial
+PA1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 PA1
+.PHONY : PA1
 
 # fast build rule for target.
-Tutorial/fast:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/build
-.PHONY : Tutorial/fast
+PA1/fast:
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/build
+.PHONY : PA1/fast
 
 #=============================================================================
-# Target rules for targets named Tutorial_SUCCESSFUL
+# Target rules for targets named PA1_SUCCESSFUL
 
 # Build rule for target.
-Tutorial_SUCCESSFUL: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Tutorial_SUCCESSFUL
-.PHONY : Tutorial_SUCCESSFUL
+PA1_SUCCESSFUL: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 PA1_SUCCESSFUL
+.PHONY : PA1_SUCCESSFUL
 
 # fast build rule for target.
-Tutorial_SUCCESSFUL/fast:
-	$(MAKE) -f CMakeFiles/Tutorial_SUCCESSFUL.dir/build.make CMakeFiles/Tutorial_SUCCESSFUL.dir/build
-.PHONY : Tutorial_SUCCESSFUL/fast
+PA1_SUCCESSFUL/fast:
+	$(MAKE) -f CMakeFiles/PA1_SUCCESSFUL.dir/build.make CMakeFiles/PA1_SUCCESSFUL.dir/build
+.PHONY : PA1_SUCCESSFUL/fast
 
 src/camera.o: src/camera.cpp.o
 .PHONY : src/camera.o
 
 # target to build an object file
 src/camera.cpp.o:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/camera.cpp.o
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/camera.cpp.o
 .PHONY : src/camera.cpp.o
 
 src/camera.i: src/camera.cpp.i
@@ -137,7 +137,7 @@ src/camera.i: src/camera.cpp.i
 
 # target to preprocess a source file
 src/camera.cpp.i:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/camera.cpp.i
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/camera.cpp.i
 .PHONY : src/camera.cpp.i
 
 src/camera.s: src/camera.cpp.s
@@ -145,7 +145,7 @@ src/camera.s: src/camera.cpp.s
 
 # target to generate assembly for a file
 src/camera.cpp.s:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/camera.cpp.s
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/camera.cpp.s
 .PHONY : src/camera.cpp.s
 
 src/engine.o: src/engine.cpp.o
@@ -153,7 +153,7 @@ src/engine.o: src/engine.cpp.o
 
 # target to build an object file
 src/engine.cpp.o:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/engine.cpp.o
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/engine.cpp.o
 .PHONY : src/engine.cpp.o
 
 src/engine.i: src/engine.cpp.i
@@ -161,7 +161,7 @@ src/engine.i: src/engine.cpp.i
 
 # target to preprocess a source file
 src/engine.cpp.i:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/engine.cpp.i
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/engine.cpp.i
 .PHONY : src/engine.cpp.i
 
 src/engine.s: src/engine.cpp.s
@@ -169,7 +169,7 @@ src/engine.s: src/engine.cpp.s
 
 # target to generate assembly for a file
 src/engine.cpp.s:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/engine.cpp.s
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/engine.cpp.s
 .PHONY : src/engine.cpp.s
 
 src/graphics.o: src/graphics.cpp.o
@@ -177,7 +177,7 @@ src/graphics.o: src/graphics.cpp.o
 
 # target to build an object file
 src/graphics.cpp.o:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/graphics.cpp.o
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/graphics.cpp.o
 .PHONY : src/graphics.cpp.o
 
 src/graphics.i: src/graphics.cpp.i
@@ -185,7 +185,7 @@ src/graphics.i: src/graphics.cpp.i
 
 # target to preprocess a source file
 src/graphics.cpp.i:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/graphics.cpp.i
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/graphics.cpp.i
 .PHONY : src/graphics.cpp.i
 
 src/graphics.s: src/graphics.cpp.s
@@ -193,7 +193,7 @@ src/graphics.s: src/graphics.cpp.s
 
 # target to generate assembly for a file
 src/graphics.cpp.s:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/graphics.cpp.s
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/graphics.cpp.s
 .PHONY : src/graphics.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -201,7 +201,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -209,7 +209,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -217,7 +217,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/object.o: src/object.cpp.o
@@ -225,7 +225,7 @@ src/object.o: src/object.cpp.o
 
 # target to build an object file
 src/object.cpp.o:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/object.cpp.o
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/object.cpp.o
 .PHONY : src/object.cpp.o
 
 src/object.i: src/object.cpp.i
@@ -233,7 +233,7 @@ src/object.i: src/object.cpp.i
 
 # target to preprocess a source file
 src/object.cpp.i:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/object.cpp.i
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/object.cpp.i
 .PHONY : src/object.cpp.i
 
 src/object.s: src/object.cpp.s
@@ -241,7 +241,7 @@ src/object.s: src/object.cpp.s
 
 # target to generate assembly for a file
 src/object.cpp.s:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/object.cpp.s
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/object.cpp.s
 .PHONY : src/object.cpp.s
 
 src/shader.o: src/shader.cpp.o
@@ -249,7 +249,7 @@ src/shader.o: src/shader.cpp.o
 
 # target to build an object file
 src/shader.cpp.o:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/shader.cpp.o
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/shader.cpp.o
 .PHONY : src/shader.cpp.o
 
 src/shader.i: src/shader.cpp.i
@@ -257,7 +257,7 @@ src/shader.i: src/shader.cpp.i
 
 # target to preprocess a source file
 src/shader.cpp.i:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/shader.cpp.i
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/shader.cpp.i
 .PHONY : src/shader.cpp.i
 
 src/shader.s: src/shader.cpp.s
@@ -265,7 +265,7 @@ src/shader.s: src/shader.cpp.s
 
 # target to generate assembly for a file
 src/shader.cpp.s:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/shader.cpp.s
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/shader.cpp.s
 .PHONY : src/shader.cpp.s
 
 src/window.o: src/window.cpp.o
@@ -273,7 +273,7 @@ src/window.o: src/window.cpp.o
 
 # target to build an object file
 src/window.cpp.o:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/window.cpp.o
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/window.cpp.o
 .PHONY : src/window.cpp.o
 
 src/window.i: src/window.cpp.i
@@ -281,7 +281,7 @@ src/window.i: src/window.cpp.i
 
 # target to preprocess a source file
 src/window.cpp.i:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/window.cpp.i
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/window.cpp.i
 .PHONY : src/window.cpp.i
 
 src/window.s: src/window.cpp.s
@@ -289,7 +289,7 @@ src/window.s: src/window.cpp.s
 
 # target to generate assembly for a file
 src/window.cpp.s:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/src/window.cpp.s
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/src/window.cpp.s
 .PHONY : src/window.cpp.s
 
 # Help Target
@@ -298,8 +298,8 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... Tutorial"
-	@echo "... Tutorial_SUCCESSFUL"
+	@echo "... PA1"
+	@echo "... PA1_SUCCESSFUL"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... src/camera.o"

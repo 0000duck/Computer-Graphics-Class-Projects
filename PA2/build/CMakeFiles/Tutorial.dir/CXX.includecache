@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/graphics_headers.h
+iostream
+-
+OpenGL/gl3.h
+-
+OpenGL/GLU.h
+-
+GL/glew.h
+-
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+glm/gtc/type_ptr.hpp
+-
+glm/gtx/rotate_vector.hpp
+-
+
+../include/shader.h
+vector
+-
+fstream
+-
+graphics_headers.h
+../include/graphics_headers.h
+
+/home/grant/Desktop/CS480/cs480Hooks/PA1/src/shader.cpp
+shader.h
+/home/grant/Desktop/CS480/cs480Hooks/PA1/src/shader.h
+

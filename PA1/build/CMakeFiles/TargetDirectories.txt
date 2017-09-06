@@ -1,2 +1,2 @@
-/home/grant/Desktop/CS480/cs480Hooks/PA1/build/CMakeFiles/Tutorial.dir
-/home/grant/Desktop/CS480/cs480Hooks/PA1/build/CMakeFiles/Tutorial_SUCCESSFUL.dir
+/home/grant/Desktop/CS480/cs480Hooks/PA1/build/CMakeFiles/PA1.dir
+/home/grant/Desktop/CS480/cs480Hooks/PA1/build/CMakeFiles/PA1_SUCCESSFUL.dir

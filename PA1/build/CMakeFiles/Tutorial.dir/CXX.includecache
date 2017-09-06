@@ -6,6 +6,32 @@
 
 #IncludeRegexTransform: 
 
+../include/camera.h
+graphics_headers.h
+../include/graphics_headers.h
+
+../include/engine.h
+sys/time.h
+-
+assert.h
+-
+window.h
+../include/window.h
+graphics.h
+../include/graphics.h
+
+../include/graphics.h
+iostream
+-
+graphics_headers.h
+../include/graphics_headers.h
+camera.h
+../include/camera.h
+shader.h
+../include/shader.h
+object.h
+../include/object.h
+
 ../include/graphics_headers.h
 iostream
 -
@@ -24,6 +50,12 @@ glm/gtc/type_ptr.hpp
 glm/gtx/rotate_vector.hpp
 -
 
+../include/object.h
+vector
+-
+graphics_headers.h
+../include/graphics_headers.h
+
 ../include/shader.h
 vector
 -
@@ -32,7 +64,19 @@ fstream
 graphics_headers.h
 ../include/graphics_headers.h
 
-/home/grant/Desktop/CS480/cs480Hooks/PA1/src/shader.cpp
-shader.h
-/home/grant/Desktop/CS480/cs480Hooks/PA1/src/shader.h
+../include/window.h
+SDL2/SDL.h
+-
+string
+-
+
+/home/grant/Desktop/CS480/cs480Hooks/PA1/src/engine.cpp
+engine.h
+/home/grant/Desktop/CS480/cs480Hooks/PA1/src/engine.h
+
+/home/grant/Desktop/CS480/cs480Hooks/PA1/src/main.cpp
+iostream
+-
+engine.h
+/home/grant/Desktop/CS480/cs480Hooks/PA1/src/engine.h
 

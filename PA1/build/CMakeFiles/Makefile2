@@ -53,73 +53,73 @@ CMAKE_SOURCE_DIR = /home/grant/Desktop/CS480/cs480Hooks/PA1
 CMAKE_BINARY_DIR = /home/grant/Desktop/CS480/cs480Hooks/PA1/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/Tutorial.dir
+# Target rules for target CMakeFiles/PA1.dir
 
 # All Build rule for target.
-CMakeFiles/Tutorial.dir/all:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/depend
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/build
+CMakeFiles/PA1.dir/all:
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/depend
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/grant/Desktop/CS480/cs480Hooks/PA1/build/CMakeFiles  1 2 3 4 5 6 7
-	@echo "Built target Tutorial"
-.PHONY : CMakeFiles/Tutorial.dir/all
+	@echo "Built target PA1"
+.PHONY : CMakeFiles/PA1.dir/all
 
 # Include target in all.
-all: CMakeFiles/Tutorial.dir/all
+all: CMakeFiles/PA1.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Tutorial.dir/rule: cmake_check_build_system
+CMakeFiles/PA1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/grant/Desktop/CS480/cs480Hooks/PA1/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Tutorial.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/PA1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/grant/Desktop/CS480/cs480Hooks/PA1/build/CMakeFiles 0
-.PHONY : CMakeFiles/Tutorial.dir/rule
+.PHONY : CMakeFiles/PA1.dir/rule
 
 # Convenience name for target.
-Tutorial: CMakeFiles/Tutorial.dir/rule
-.PHONY : Tutorial
+PA1: CMakeFiles/PA1.dir/rule
+.PHONY : PA1
 
 # clean rule for target.
-CMakeFiles/Tutorial.dir/clean:
-	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/clean
-.PHONY : CMakeFiles/Tutorial.dir/clean
+CMakeFiles/PA1.dir/clean:
+	$(MAKE) -f CMakeFiles/PA1.dir/build.make CMakeFiles/PA1.dir/clean
+.PHONY : CMakeFiles/PA1.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/Tutorial.dir/clean
+clean: CMakeFiles/PA1.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Tutorial_SUCCESSFUL.dir
+# Target rules for target CMakeFiles/PA1_SUCCESSFUL.dir
 
 # All Build rule for target.
-CMakeFiles/Tutorial_SUCCESSFUL.dir/all: CMakeFiles/Tutorial.dir/all
-	$(MAKE) -f CMakeFiles/Tutorial_SUCCESSFUL.dir/build.make CMakeFiles/Tutorial_SUCCESSFUL.dir/depend
-	$(MAKE) -f CMakeFiles/Tutorial_SUCCESSFUL.dir/build.make CMakeFiles/Tutorial_SUCCESSFUL.dir/build
+CMakeFiles/PA1_SUCCESSFUL.dir/all: CMakeFiles/PA1.dir/all
+	$(MAKE) -f CMakeFiles/PA1_SUCCESSFUL.dir/build.make CMakeFiles/PA1_SUCCESSFUL.dir/depend
+	$(MAKE) -f CMakeFiles/PA1_SUCCESSFUL.dir/build.make CMakeFiles/PA1_SUCCESSFUL.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/grant/Desktop/CS480/cs480Hooks/PA1/build/CMakeFiles 
-	@echo "Built target Tutorial_SUCCESSFUL"
-.PHONY : CMakeFiles/Tutorial_SUCCESSFUL.dir/all
+	@echo "Built target PA1_SUCCESSFUL"
+.PHONY : CMakeFiles/PA1_SUCCESSFUL.dir/all
 
 # Include target in all.
-all: CMakeFiles/Tutorial_SUCCESSFUL.dir/all
+all: CMakeFiles/PA1_SUCCESSFUL.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Tutorial_SUCCESSFUL.dir/rule: cmake_check_build_system
+CMakeFiles/PA1_SUCCESSFUL.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/grant/Desktop/CS480/cs480Hooks/PA1/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Tutorial_SUCCESSFUL.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/PA1_SUCCESSFUL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/grant/Desktop/CS480/cs480Hooks/PA1/build/CMakeFiles 0
-.PHONY : CMakeFiles/Tutorial_SUCCESSFUL.dir/rule
+.PHONY : CMakeFiles/PA1_SUCCESSFUL.dir/rule
 
 # Convenience name for target.
-Tutorial_SUCCESSFUL: CMakeFiles/Tutorial_SUCCESSFUL.dir/rule
-.PHONY : Tutorial_SUCCESSFUL
+PA1_SUCCESSFUL: CMakeFiles/PA1_SUCCESSFUL.dir/rule
+.PHONY : PA1_SUCCESSFUL
 
 # clean rule for target.
-CMakeFiles/Tutorial_SUCCESSFUL.dir/clean:
-	$(MAKE) -f CMakeFiles/Tutorial_SUCCESSFUL.dir/build.make CMakeFiles/Tutorial_SUCCESSFUL.dir/clean
-.PHONY : CMakeFiles/Tutorial_SUCCESSFUL.dir/clean
+CMakeFiles/PA1_SUCCESSFUL.dir/clean:
+	$(MAKE) -f CMakeFiles/PA1_SUCCESSFUL.dir/build.make CMakeFiles/PA1_SUCCESSFUL.dir/clean
+.PHONY : CMakeFiles/PA1_SUCCESSFUL.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/Tutorial_SUCCESSFUL.dir/clean
+clean: CMakeFiles/PA1_SUCCESSFUL.dir/clean
 .PHONY : clean
 
 #=============================================================================
