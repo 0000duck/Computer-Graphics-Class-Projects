@@ -6,4 +6,5 @@ Vertex Shader - VertexShader.vert
 Fragment Shader - FragmentShader.frag
 
 ## Running
-./PA1 -v VertexShader.vert -f FragmentShader.frag
+from build folder:
+./PA1 -v ../shaders/VertexShader.vert -f ../shaders/FragmentShader.frag
