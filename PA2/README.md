@@ -7,8 +7,8 @@
 
 ## Shaders
 shaders are located in the folder titled "shaders"
-Vertex Shader - VertexShader.vert
-Fragment Shader - FragmentShader.frag
+- Vertex Shader - VertexShader.vert
+- Fragment Shader - FragmentShader.frag
 
 ## Building
 >$ cd build
