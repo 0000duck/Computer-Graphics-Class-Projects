@@ -78,7 +78,7 @@ bool Graphics::Initialize(int width, int height, char * vertexShader, char * fra
 
   // Locate the projection matrix in the shader
   m_projectionMatrix = m_shader->GetUniformLocation("projectionMatrix");
-  if (m_projectionMatrix == INVALID_UNIFORM_LOCATION) 
+  if (m_projectionMatrix == INVALID_UNIFORM_LOCATION)
   {
     printf("m_projectionMatrix not found\n");
     return false;
@@ -86,7 +86,7 @@ bool Graphics::Initialize(int width, int height, char * vertexShader, char * fra
 
   // Locate the view matrix in the shader
   m_viewMatrix = m_shader->GetUniformLocation("viewMatrix");
-  if (m_viewMatrix == INVALID_UNIFORM_LOCATION) 
+  if (m_viewMatrix == INVALID_UNIFORM_LOCATION)
   {
     printf("m_viewMatrix not found\n");
     return false;
@@ -94,7 +94,7 @@ bool Graphics::Initialize(int width, int height, char * vertexShader, char * fra
 
   // Locate the model matrix in the shader
   m_modelMatrix = m_shader->GetUniformLocation("modelMatrix");
-  if (m_modelMatrix == INVALID_UNIFORM_LOCATION) 
+  if (m_modelMatrix == INVALID_UNIFORM_LOCATION)
   {
     printf("m_modelMatrix not found\n");
     return false;
@@ -113,6 +113,23 @@ void Graphics::Update(unsigned int dt)
   m_cube->Update(dt);
 }
 
+void Graphics::KeyboardEvent(SDL_Keycode key) {
+  if(key == SDLK_q) {
+    m_cube->PauseSpin();
+  }else if(key == SDLK_w) {
+    m_cube->PauseRotation();
+  }else if(key == SDLK_e) {
+    m_cube->ReverseSpin();
+  }else if(key == SDLK_r){
+    m_cube->ReverseRotation();
+  }
+}
+
+void Graphics::MousePause() {
+  m_cube->PauseSpin();
+  m_cube->PauseRotation();
+}
+
 void Graphics::Render()
 {
   //clear the screen
@@ -123,8 +140,8 @@ void Graphics::Render()
   m_shader->Enable();
 
   // Send in the projection and view to the shader
-  glUniformMatrix4fv(m_projectionMatrix, 1, GL_FALSE, glm::value_ptr(m_camera->GetProjection())); 
-  glUniformMatrix4fv(m_viewMatrix, 1, GL_FALSE, glm::value_ptr(m_camera->GetView())); 
+  glUniformMatrix4fv(m_projectionMatrix, 1, GL_FALSE, glm::value_ptr(m_camera->GetProjection()));
+  glUniformMatrix4fv(m_viewMatrix, 1, GL_FALSE, glm::value_ptr(m_camera->GetView()));
 
   // Render the object
   glUniformMatrix4fv(m_modelMatrix, 1, GL_FALSE, glm::value_ptr(m_cube->GetModel()));
@@ -170,4 +187,3 @@ std::string Graphics::ErrorString(GLenum error)
     return "None";
   }
 }
-

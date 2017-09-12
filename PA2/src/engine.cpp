@@ -96,7 +96,12 @@ void Engine::Keyboard()
     if (m_event.key.keysym.sym == SDLK_ESCAPE)
     {
       m_running = false;
+    }else {
+      m_graphics->KeyboardEvent(m_event.key.keysym.sym);
     }
+  }else if(m_event.type == SDL_MOUSEBUTTONDOWN) {
+      if(m_event.button.button == SDL_BUTTON_LEFT)
+      m_graphics->MousePause();
   }
 }
 

@@ -12,7 +12,7 @@ else
 endif
 
 # Paths, use this to set Include directories, or library directories; uncomment in all: if used
-#PATHI=-I/usr/local/include/ 
+#PATHI=-I/usr/local/include/
 #PATHL=-L/usr/local/lib/
 
 #Compiler Flags
@@ -26,7 +26,7 @@ INDLUDES=-I../include
 
 
 all: $(O_FILES)
-	$(CC) $(CXXFLAGS) -o Tutorial $(O_FILES) $(LIBS) #$(PATHI) $(PATHL)
+	$(CC) $(CXXFLAGS) -o PA2 $(O_FILES) $(LIBS) #$(PATHI) $(PATHL)
 
 main.o: ../src/main.cpp
 	$(CC) $(CXXFLAGS) -c ../src/main.cpp -o main.o $(INDLUDES)
@@ -50,4 +50,4 @@ window.o: ../src/window.cpp
 	$(CC) $(CXXFLAGS) -c ../src/window.cpp -o window.o $(INDLUDES)
 
 clean:
-	-@if rm *.o Tutorial 2>/dev/null || true; then echo "Main Removed"; else echo "No Main"; fi
+	-@if rm *.o PA2 2>/dev/null || true; then echo "Main Removed"; else echo "No Main"; fi

@@ -10,6 +10,7 @@ int main(int argc, char **argv)
 
   // Start an engine and run it then cleanup after
 	for(int i = 0; i < argc; i++) {
+
 		if(string(argv[i]) == "-v") {
 			vertexShader = argv[i+1];
 		}
@@ -19,7 +20,7 @@ int main(int argc, char **argv)
 		}
 	}
 
-  Engine *engine = new Engine("PA1", 800, 600, vertexShader, fragmentShader);
+  Engine *engine = new Engine("PA2", 800, 600, vertexShader, fragmentShader);
   if(!engine->Initialize())
   {
     printf("The engine failed to start.\n");

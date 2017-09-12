@@ -11,6 +11,10 @@ class Object
     ~Object();
     void Update(unsigned int dt);
     void Render();
+    void ReverseRotation();
+    void ReverseSpin();
+    void PauseRotation();
+    void PauseSpin();
 
     glm::mat4 GetModel();
 
@@ -22,7 +26,11 @@ class Object
     GLuint IB;
 
     float angle;
-	float translation;
+	  float translation;
+    int spinDirection;
+    int rotationDirection;
+    bool isRotating;
+    bool isSpinning;
 };
 
 #endif /* OBJECT_H */

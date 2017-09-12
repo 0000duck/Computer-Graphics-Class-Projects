@@ -70,13 +70,35 @@ SDL2/SDL.h
 string
 -
 
+/home/grant/Desktop/CS480/cs480Hooks/PA2/src/camera.cpp
+camera.h
+/home/grant/Desktop/CS480/cs480Hooks/PA2/src/camera.h
+
 /home/grant/Desktop/CS480/cs480Hooks/PA2/src/engine.cpp
 engine.h
 /home/grant/Desktop/CS480/cs480Hooks/PA2/src/engine.h
+
+/home/grant/Desktop/CS480/cs480Hooks/PA2/src/graphics.cpp
+graphics.h
+/home/grant/Desktop/CS480/cs480Hooks/PA2/src/graphics.h
 
 /home/grant/Desktop/CS480/cs480Hooks/PA2/src/main.cpp
 iostream
 -
 engine.h
 /home/grant/Desktop/CS480/cs480Hooks/PA2/src/engine.h
+
+/home/grant/Desktop/CS480/cs480Hooks/PA2/src/object.cpp
+object.h
+/home/grant/Desktop/CS480/cs480Hooks/PA2/src/object.h
+math.h
+-
+
+/home/grant/Desktop/CS480/cs480Hooks/PA2/src/shader.cpp
+shader.h
+/home/grant/Desktop/CS480/cs480Hooks/PA2/src/shader.h
+
+/home/grant/Desktop/CS480/cs480Hooks/PA2/src/window.cpp
+window.h
+-
 

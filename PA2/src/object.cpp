@@ -1,8 +1,10 @@
 #include "object.h"
 #include <math.h>
 
+using namespace std;
+
 Object::Object()
-{  
+{
   /*
     # Blender File for a Cube
     o Cube
@@ -70,6 +72,10 @@ Object::Object()
   glGenBuffers(1, &IB);
   glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IB);
   glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(unsigned int) * Indices.size(), &Indices[0], GL_STATIC_DRAW);
+  spinDirection = 1;
+  rotationDirection = 1;
+  isSpinning = true;
+  isRotating = true;
 }
 
 Object::~Object()
@@ -78,14 +84,38 @@ Object::~Object()
   Indices.clear();
 }
 
+void Object::ReverseRotation() {
+  rotationDirection *= -1;
+  isRotating = true;
+}
+
+void Object::ReverseSpin() {
+  spinDirection *= -1;
+  isSpinning = true;
+}
+
+void Object::PauseRotation(){
+  isRotating = !isRotating;
+}
+
+void Object::PauseSpin(){
+  isSpinning = !isSpinning;
+}
+
 void Object::Update(unsigned int dt)
 {
   float multiplier = 1000;
   float diameter = 10;
-  angle += dt * M_PI/multiplier;
-  translation += dt * M_PI/multiplier;
-  glm::mat4 translation = glm::translate(glm::vec3(sin(angle/10) * diameter, 0.0, cos(angle/10) * diameter));
-  model = glm::rotate(translation, (angle), glm::vec3(0.0, 1.0, 0.0));
+  if(isSpinning) {
+    angle += dt * M_PI/multiplier * spinDirection;
+  }
+
+  if(isRotating) {
+    translation += dt * M_PI/multiplier * rotationDirection;
+  }
+
+  glm::mat4 translationMatrix = glm::translate(glm::vec3(sin(translation/10) * diameter, 0.0, cos(translation/10) * diameter));
+  model = glm::rotate(translationMatrix, (angle), glm::vec3(0.0, 1.0, 0.0));
 }
 
 glm::mat4 Object::GetModel()
@@ -109,4 +139,3 @@ void Object::Render()
   glDisableVertexAttribArray(0);
   glDisableVertexAttribArray(1);
 }
-
