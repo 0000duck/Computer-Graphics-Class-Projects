@@ -11,12 +11,12 @@ Vertex Shader - VertexShader.vert
 Fragment Shader - FragmentShader.frag
 
 ## Building
-$cd build
-$make
+$ cd build
+$ make
 
 ## Running
 from build folder:
-$./PA2 -v ../shaders/VertexShader.vert -f ../shaders/FragmentShader.frag
+$ ./PA2 -v ../shaders/VertexShader.vert -f ../shaders/FragmentShader.frag
 
 ## Controls
 Q - Pauses Spinning
