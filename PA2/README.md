@@ -12,6 +12,7 @@ Fragment Shader - FragmentShader.frag
 
 ## Building
 >$ cd build
+
 >$ make
 
 ## Running
