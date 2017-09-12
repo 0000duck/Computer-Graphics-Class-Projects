@@ -1,9 +1,9 @@
 # PA2: Spinning Cube
 
 ## Libraries
-GLM
-GLEW
-SDL
+- GLM
+- GLEW
+- SDL
 
 ## Shaders
 shaders are located in the folder titled "shaders"
