@@ -19,8 +19,8 @@ from build folder:
 >$ ./PA2 -v ../shaders/VertexShader.vert -f ../shaders/FragmentShader.frag
 
 ## Controls
--Q - Pauses Spinning
--W - Pauses Rotation
--E - Reverses Spinning
--R - Reverses Rotation
--Left Mouse Button - Pauses Spinning and Rotation
+- Q - Pauses Spinning
+- W - Pauses Rotation
+- E - Reverses Spinning
+- R - Reverses Rotation
+- Left Mouse Button - Pauses Spinning and Rotation
