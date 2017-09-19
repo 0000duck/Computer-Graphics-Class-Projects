@@ -119,12 +119,16 @@ void Graphics::Update(unsigned int dt)
 void Graphics::KeyboardEvent(SDL_Keycode key) {
   if(key == SDLK_q) {
     m_planet->PauseSpin();
+    m_moon->PauseSpin();
   }else if(key == SDLK_w) {
     m_planet->PauseRotation();
+    m_moon->PauseRotation();
   }else if(key == SDLK_e) {
     m_planet->ReverseSpin();
+    m_moon->ReverseSpin();
   }else if(key == SDLK_r){
     m_planet->ReverseRotation();
+    m_moon->ReverseRotation();
   }else if(key == SDLK_LEFT) {
     m_planet->PauseSpin();
   }else if(key == SDLK_RIGHT){
