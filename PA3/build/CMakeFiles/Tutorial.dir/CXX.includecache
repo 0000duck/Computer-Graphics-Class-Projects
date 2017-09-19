@@ -23,8 +23,6 @@ graphics.h
 ../include/graphics.h
 iostream
 -
-SDL2/SDL.h
--
 graphics_headers.h
 ../include/graphics_headers.h
 camera.h
@@ -72,17 +70,13 @@ SDL2/SDL.h
 string
 -
 
-/home/grant/Desktop/CS480/cs480Hooks/PA2/src/engine.cpp
+/home/grant/Desktop/CS480/cs480Hooks/PA3/src/engine.cpp
 engine.h
-/home/grant/Desktop/CS480/cs480Hooks/PA2/src/engine.h
+/home/grant/Desktop/CS480/cs480Hooks/PA3/src/engine.h
 
-/home/grant/Desktop/CS480/cs480Hooks/PA2/src/graphics.cpp
-graphics.h
-/home/grant/Desktop/CS480/cs480Hooks/PA2/src/graphics.h
-
-/home/grant/Desktop/CS480/cs480Hooks/PA2/src/main.cpp
+/home/grant/Desktop/CS480/cs480Hooks/PA3/src/main.cpp
 iostream
 -
 engine.h
-/home/grant/Desktop/CS480/cs480Hooks/PA2/src/engine.h
+/home/grant/Desktop/CS480/cs480Hooks/PA3/src/engine.h
 
