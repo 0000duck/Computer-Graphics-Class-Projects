@@ -1,4 +1,2 @@
-/home/grant/Desktop/CS/CS480Hooks/PA4/build/CMakeFiles/edit_cache.dir
-/home/grant/Desktop/CS/CS480Hooks/PA4/build/CMakeFiles/rebuild_cache.dir
-/home/grant/Desktop/CS/CS480Hooks/PA4/build/CMakeFiles/PA4_SUCCESSFUL.dir
-/home/grant/Desktop/CS/CS480Hooks/PA4/build/CMakeFiles/PA4.dir
+/home/grant/Desktop/CS480/cs480Hooks/PA4/build/CMakeFiles/PA4.dir
+/home/grant/Desktop/CS480/cs480Hooks/PA4/build/CMakeFiles/PA4_SUCCESSFUL.dir

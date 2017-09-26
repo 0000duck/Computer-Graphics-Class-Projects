@@ -7,21 +7,16 @@
 class Object
 {
   public:
-    Object();
     Object(char * objectFile);
     ~Object();
     void Update(unsigned int dt);
     void Render();
-    void ReverseRotation();
-    void ReverseSpin();
-    void PauseRotation();
-    void PauseSpin();
-    void SetPlanetOrbiting(Object * planet);
 
     glm::mat4 GetModel();
     glm::mat4 GetTranslationMatrix();
 
   private:
+    bool LoadModel(char * objectFile);
     glm::mat4 model;
     glm::mat4 origin;
     glm::mat4 translationMatrix;
@@ -31,15 +26,6 @@ class Object
     GLuint IB;
 
     float angle;
-	  float translation;
-    float spinSpeed;
-    float rotationSpeed;
-    float radius;
-    int spinDirection;
-    int rotationDirection;
-    bool isRotating;
-    bool isSpinning;
-    bool isMoon;
     Object * m_planet;
 };
 

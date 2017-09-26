@@ -15,12 +15,9 @@ class Graphics
   public:
     Graphics();
     ~Graphics();
-    bool Initialize(int width, int height, char * vertexShader, char * fragmentShader);
     bool Initialize(int width, int height, char * vertexShader, char * fragmentShader, char * model);
     void Update(unsigned int dt);
     void Render();
-    void KeyboardEvent(SDL_Keycode key);
-    void MousePause();
 
   private:
     std::string ErrorString(GLenum error);

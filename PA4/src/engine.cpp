@@ -64,12 +64,6 @@ bool Engine::Initialize()
       printf("The graphics failed to initialize.\n");
       return false;
     }
-  }else {
-    if(!m_graphics->Initialize(m_WINDOW_WIDTH, m_WINDOW_HEIGHT, m_vertexShader, m_fragmentShader))
-    {
-      printf("The graphics failed to initialize.\n");
-      return false;
-    }
   }
 
   // Set the time
@@ -115,12 +109,7 @@ void Engine::Keyboard()
     if (m_event.key.keysym.sym == SDLK_ESCAPE)
     {
       m_running = false;
-    }else {
-      m_graphics->KeyboardEvent(m_event.key.keysym.sym);
     }
-  }else if(m_event.type == SDL_MOUSEBUTTONDOWN) {
-      if(m_event.button.button == SDL_BUTTON_LEFT)
-      m_graphics->MousePause();
   }
 }
 
