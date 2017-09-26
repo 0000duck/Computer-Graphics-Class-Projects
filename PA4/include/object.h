@@ -25,7 +25,7 @@ class Object
     GLuint VB;
     GLuint IB;
 
-    Object * m_planet;
+    Object * m_object;
 };
 
 #endif /* OBJECT_H */

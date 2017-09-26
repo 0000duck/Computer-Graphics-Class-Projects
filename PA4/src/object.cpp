@@ -9,7 +9,7 @@ Object::Object(char * objectFile) {
     cout << "Unable to load model" << endl;
   }
   // The index works at a 0th index
-  for(unsigned int i = 0; i < Indices.size(); i++)
+  /*for(unsigned int i = 0; i < Indices.size(); i++)
   {
     Indices[i] = Indices[i] - 1;
     cout << Indices[i] << endl;
@@ -19,7 +19,7 @@ Object::Object(char * objectFile) {
   {
     cout << "Vertex: " << "(" << Vertices[i].vertex.x << ", " << Vertices[i].vertex.y << ", " << Vertices[i].vertex.z << ")" << endl;
     cout << "Color: " << "(" << Vertices[i].color.x << ", " << Vertices[i].color.y << ", " << Vertices[i].color.z << ")" << endl;
-  }
+  }*/
 
   model = glm::mat4(1.0);
 
@@ -60,13 +60,13 @@ bool Object::LoadModel(char * objectFile) {
       unsigned int temp;
       fin >> temp;
       cout << "(" << temp;
-      Indices.push_back(temp);
+      Indices.push_back(temp-1);
       fin >> temp;
       cout << ", " << temp;
-      Indices.push_back(temp);
+      Indices.push_back(temp-1);
       fin >> temp;
       cout << ", " << temp << ")" << endl;
-      Indices.push_back(temp);
+      Indices.push_back(temp-1);
     }else {
       string s;
       getline(fin, s);
@@ -74,6 +74,7 @@ bool Object::LoadModel(char * objectFile) {
     fin >> ws;
 	}
   fin.close();
+  return true;
 }
 
 glm::mat4 Object::GetModel()

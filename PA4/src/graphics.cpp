@@ -45,7 +45,7 @@ bool Graphics::Initialize(int width, int height, char * vertexShader, char * fra
   }
 
   // Create the object
-  m_planet = new Object(model);
+  m_object = new Object(model);
 
   // Set up the shaders
   m_shader = new Shader();
@@ -121,8 +121,8 @@ void Graphics::Render()
   glUniformMatrix4fv(m_viewMatrix, 1, GL_FALSE, glm::value_ptr(m_camera->GetView()));
 
   // Render the object
-  glUniformMatrix4fv(m_modelMatrix, 1, GL_FALSE, glm::value_ptr(m_planet->GetModel()));
-  m_planet->Render();
+  glUniformMatrix4fv(m_modelMatrix, 1, GL_FALSE, glm::value_ptr(m_object->GetModel()));
+  m_object->Render();
 
   // Get any errors from OpenGL
   auto error = glGetError();

@@ -28,7 +28,7 @@ class Graphics
     GLint m_viewMatrix;
     GLint m_modelMatrix;
 
-    Object *m_planet;
+    Object *m_object;
 };
 
 #endif /* GRAPHICS_H */
