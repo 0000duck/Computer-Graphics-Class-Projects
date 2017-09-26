@@ -16,7 +16,6 @@ class Graphics
     Graphics();
     ~Graphics();
     bool Initialize(int width, int height, char * vertexShader, char * fragmentShader, char * model);
-    void Update(unsigned int dt);
     void Render();
 
   private:
@@ -30,7 +29,6 @@ class Graphics
     GLint m_modelMatrix;
 
     Object *m_planet;
-    Object *m_moon;
 };
 
 #endif /* GRAPHICS_H */

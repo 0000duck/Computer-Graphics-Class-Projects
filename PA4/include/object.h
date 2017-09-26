@@ -25,7 +25,6 @@ class Object
     GLuint VB;
     GLuint IB;
 
-    float angle;
     Object * m_planet;
 };
 

@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+../include/camera.h
+graphics_headers.h
+../include/graphics_headers.h
+
+../include/graphics.h
+iostream
+-
+SDL2/SDL.h
+-
+graphics_headers.h
+../include/graphics_headers.h
+camera.h
+../include/camera.h
+shader.h
+../include/shader.h
+object.h
+../include/object.h
+
 ../include/graphics_headers.h
 iostream
 -
@@ -30,11 +48,15 @@ vector
 graphics_headers.h
 ../include/graphics_headers.h
 
-/home/grant/Desktop/CS480/cs480Hooks/PA4/src/object.cpp
-object.h
-/home/grant/Desktop/CS480/cs480Hooks/PA4/src/object.h
-math.h
+../include/shader.h
+vector
 -
 fstream
 -
+graphics_headers.h
+../include/graphics_headers.h
+
+/home/grant/Desktop/CS480/cs480Hooks/PA4/src/graphics.cpp
+graphics.h
+/home/grant/Desktop/CS480/cs480Hooks/PA4/src/graphics.h
 

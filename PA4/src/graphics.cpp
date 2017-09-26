@@ -107,12 +107,6 @@ bool Graphics::Initialize(int width, int height, char * vertexShader, char * fra
   return true;
 }
 
-void Graphics::Update(unsigned int dt)
-{
-  // Update the object
-  m_planet->Update(dt);
-}
-
 void Graphics::Render()
 {
   //clear the screen

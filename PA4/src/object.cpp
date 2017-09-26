@@ -21,7 +21,7 @@ Object::Object(char * objectFile) {
     cout << "Color: " << "(" << Vertices[i].color.x << ", " << Vertices[i].color.y << ", " << Vertices[i].color.z << ")" << endl;
   }
 
-  angle = 0.0f;
+  model = glm::mat4(1.0);
 
   glGenBuffers(1, &VB);
   glBindBuffer(GL_ARRAY_BUFFER, VB);
@@ -76,19 +76,9 @@ bool Object::LoadModel(char * objectFile) {
   fin.close();
 }
 
-void Object::Update(unsigned int dt)
-{
-  model = origin;
-}
-
 glm::mat4 Object::GetModel()
 {
   return model;
-}
-
-glm::mat4 Object::GetTranslationMatrix()
-{
-  return translationMatrix;
 }
 
 void Object::Render()
