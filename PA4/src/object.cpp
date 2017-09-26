@@ -62,6 +62,13 @@ Object::Object()
   for(unsigned int i = 0; i < Indices.size(); i++)
   {
     Indices[i] = Indices[i] - 1;
+    cout << Indices[i] << endl;
+  }
+
+  for(int i = 0; i < Vertices.size(); i++)
+  {
+    cout << "Vertex: " << "(" << Vertices[i].vertex.x << ", " << Vertices[i].vertex.y << ", " << Vertices[i].vertex.z << ")" << endl;
+    cout << "Color: " << "(" << Vertices[i].color.x << ", " << Vertices[i].color.y << ", " << Vertices[i].color.z << ")" << endl;
   }
 
   angle = 0.0f;
@@ -89,21 +96,48 @@ Object::Object(char * objectFile) {
   string line;
   while(!fin.eof()) {
     char firstLetter;
+    fin >> ws;
 		fin >> firstLetter;
+    cout << "First Letter: " << firstLetter << endl;
     if(firstLetter == 'v') {
-      glm::vec3 tempVertex;
-      glm::vec3 tempColor(0,0,0);
-      fin >> tempVertex.x;
-      fin >> tempVertex.y;
-      fin >> tempVertex.z;
-      Vertex temp(tempVertex, tempColor);
+      float x, y, z;
+      fin >> x;
+      fin >> y;
+      fin >> z;
+      glm::vec3 tempVertex = glm::vec3(x, y, z);
+      cout << "(" << tempVertex.x << ", " << tempVertex.y << ", " << tempVertex.z << ")" << endl;
+      glm::vec3 tempColor = glm::vec3(x, y, z);
+      Vertex temp = Vertex(tempVertex, tempColor);
       Vertices.push_back(temp);
+    }else if(firstLetter == 'f') {
+      unsigned int temp;
+      fin >> temp;
+      cout << "(" << temp;
+      Indices.push_back(temp);
+      fin >> temp;
+      cout << ", " << temp;
+      Indices.push_back(temp);
+      fin >> temp;
+      cout << ", " << temp << ")" << endl;
+      Indices.push_back(temp);
+    }else {
+      string s;
+      getline(fin, s);
     }
+    fin >> ws;
 	}
+  fin.close();
   // The index works at a 0th index
   for(unsigned int i = 0; i < Indices.size(); i++)
   {
     Indices[i] = Indices[i] - 1;
+    cout << Indices[i] << endl;
+  }
+
+  for(int i = 0; i < Vertices.size(); i++)
+  {
+    cout << "Vertex: " << "(" << Vertices[i].vertex.x << ", " << Vertices[i].vertex.y << ", " << Vertices[i].vertex.z << ")" << endl;
+    cout << "Color: " << "(" << Vertices[i].color.x << ", " << Vertices[i].color.y << ", " << Vertices[i].color.z << ")" << endl;
   }
 
   angle = 0.0f;

@@ -12,6 +12,7 @@ class Engine
   public:
     Engine(string name, int width, int height);
 		Engine(string name, int width, int height, char * vertexShader, char * fragmentShader);
+    Engine(string name, int width, int height, char * vertexShader, char * fragmentShader, char * model);
     Engine(string name);
     ~Engine();
     bool Initialize();
@@ -36,6 +37,7 @@ class Engine
 
 		char * m_fragmentShader;
 		char * m_vertexShader;
+    char * m_model;
 };
 
 #endif // ENGINE_H

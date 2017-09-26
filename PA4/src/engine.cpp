@@ -27,6 +27,17 @@ Engine::Engine(string name, int width, int height, char * vertexShader, char * f
 	m_fragmentShader = fragmentShader;
 }
 
+Engine::Engine(string name, int width, int height, char * vertexShader, char * fragmentShader, char * model)
+{
+  m_WINDOW_NAME = name;
+  m_WINDOW_WIDTH = width;
+  m_WINDOW_HEIGHT = height;
+  m_FULLSCREEN = false;
+	m_vertexShader = vertexShader;
+	m_fragmentShader = fragmentShader;
+  m_model = model;
+}
+
 Engine::~Engine()
 {
   delete m_window;
@@ -47,10 +58,18 @@ bool Engine::Initialize()
 
   // Start the graphics
   m_graphics = new Graphics();
-  if(!m_graphics->Initialize(m_WINDOW_WIDTH, m_WINDOW_HEIGHT, m_vertexShader, m_fragmentShader))
-  {
-    printf("The graphics failed to initialize.\n");
-    return false;
+  if(m_model) {
+    if(!m_graphics->Initialize(m_WINDOW_WIDTH, m_WINDOW_HEIGHT, m_vertexShader, m_fragmentShader, m_model))
+    {
+      printf("The graphics failed to initialize.\n");
+      return false;
+    }
+  }else {
+    if(!m_graphics->Initialize(m_WINDOW_WIDTH, m_WINDOW_HEIGHT, m_vertexShader, m_fragmentShader))
+    {
+      printf("The graphics failed to initialize.\n");
+      return false;
+    }
   }
 
   // Set the time
