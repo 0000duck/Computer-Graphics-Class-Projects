@@ -8,18 +8,6 @@ Object::Object(char * objectFile) {
   if(!LoadModel(objectFile)) {
     cout << "Unable to load model" << endl;
   }
-  // The index works at a 0th index
-  /*for(unsigned int i = 0; i < Indices.size(); i++)
-  {
-    Indices[i] = Indices[i] - 1;
-    cout << Indices[i] << endl;
-  }
-
-  for(int i = 0; i < Vertices.size(); i++)
-  {
-    cout << "Vertex: " << "(" << Vertices[i].vertex.x << ", " << Vertices[i].vertex.y << ", " << Vertices[i].vertex.z << ")" << endl;
-    cout << "Color: " << "(" << Vertices[i].color.x << ", " << Vertices[i].color.y << ", " << Vertices[i].color.z << ")" << endl;
-  }*/
 
   model = glm::mat4(1.0);
 
@@ -45,8 +33,8 @@ bool Object::LoadModel(char * objectFile) {
     char firstLetter;
     fin >> ws;
 		fin >> firstLetter;
-    cout << "First Letter: " << firstLetter << endl;
     if(firstLetter == 'v') {
+      cout << "Vertex" << endl;
       float x, y, z;
       fin >> x;
       fin >> y;
@@ -57,6 +45,7 @@ bool Object::LoadModel(char * objectFile) {
       Vertex temp = Vertex(tempVertex, tempColor);
       Vertices.push_back(temp);
     }else if(firstLetter == 'f') {
+      cout << "Face" << endl;
       unsigned int temp;
       fin >> temp;
       cout << "(" << temp;
