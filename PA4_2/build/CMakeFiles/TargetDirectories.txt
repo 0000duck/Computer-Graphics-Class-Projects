@@ -1,2 +1,0 @@
-/home/grant/Desktop/CS480/cs480Hooks/PA4_2/build/CMakeFiles/PA1.dir
-/home/grant/Desktop/CS480/cs480Hooks/PA4_2/build/CMakeFiles/PA1_SUCCESSFUL.dir
