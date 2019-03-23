@@ -1,0 +1,10 @@
+{
+	"name" 		: "Sphere",
+	"type" 		: "sphere",
+	"shape"		: 1,
+	"model" 	: "../data/models/sphere.obj",
+	"texture" 	: "../data/textures/sphere.png",
+	"position" 	: [0.5, 2, 0],
+	"velocity" 	: [0, 0, 0],
+	"mass" 		: 1
+}

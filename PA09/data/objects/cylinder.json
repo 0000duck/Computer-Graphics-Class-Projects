@@ -1,0 +1,18 @@
+{
+	"name" 			: "Cylinder",
+	"type" 			: "cylinder",
+
+	"model" 		: "../data/models/cylinder.obj",
+	"texture" 		: "../data/textures/cylinder.png",
+	
+	"shape"			: [1, 1, 1],
+	"position" 		: [-6, 0.2, 0],
+	"velocity" 		: [0, 0, 0],
+	"mass" 			: 0,
+	"restitution"	: 1.1,
+
+	"ambient"		: [1, 1, 1],
+	"diffuse"		: [1, 1, 1],
+	"specular"		: [1, 1, 1],
+	"shine"			: 1
+}

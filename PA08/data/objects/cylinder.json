@@ -1,0 +1,10 @@
+{
+	"name" 		: "Cylinder",
+	"type" 		: "cylinder",
+	"shape"		: [1, 1, 1],
+	"model" 	: "../data/models/cylinder.obj",
+	"texture" 	: "../data/textures/cylinder.png",
+	"position" 	: [1, 0.01, 1],
+	"velocity" 	: [0, 0, 0],
+	"mass" 		: 0
+}

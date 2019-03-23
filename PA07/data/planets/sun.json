@@ -1,0 +1,15 @@
+{
+  "name":"Sun",
+  "model":"../data/models/earth.obj",
+  "texture":"../data/textures/sun.jpg",
+  "rank":0,
+  "diameter":109.3,
+  "distance":0,
+  "orbital_period":0,
+  "rotation_period":24.47,
+  "inclination_orbit":0,
+  "inclination_equator":0,
+  "orbital_eccentricity":0,
+  "moons":[],
+  "rings": []
+}

@@ -1,0 +1,31 @@
+{
+  "name":"Earth",
+  "model":"../data/models/earth.obj",
+  "texture":"../data/textures/earth.jpg",
+  "diameter":1,
+  "rank":3,
+  "current_orbit_angle":0.3,
+  "distance":11727.8143,
+  "orbital_period":365.2,
+  "rotation_period":1,
+  "inclination_orbit":0,
+  "inclination_equator":23.4,
+  "orbital_eccentricity":0.017,
+  "moons":[
+    {
+      "name":"Moon",
+      "model":"../data/models/earth.obj",
+      "texture":"../data/textures/moon.jpg",
+      "rank":0.5,
+      "current_orbit_angle":0.5,
+      "diameter":0.2724,
+      "distance":30.1034,
+      "orbital_period":27.3,
+      "rotation_period":27.4351,
+      "inclination_orbit":5.1,
+      "inclination_equator":6.7,
+      "orbital_eccentricity":0.055
+    }
+  ],
+  "rings": []
+}

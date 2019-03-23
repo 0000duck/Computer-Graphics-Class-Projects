@@ -1,0 +1,19 @@
+{
+	"name" 			: "Ball",
+	"type" 			: "sphere",
+
+	"model" 		: "../data/models/sphere.obj",
+	"texture" 		: "../data/textures/sphere.png",
+	"scale"			: 0.65,
+
+	"shape"			: 0.4,
+	"position" 		: [7.25, 0.5, -10],
+	"velocity" 		: [0, 0, 0],
+	"mass" 			: 1,
+	"restitution"	: 0.9,
+
+	"ambient"		: [1, 1, 1],
+	"diffuse"		: [1, 1, 1],
+	"specular"		: [1, 1, 1],
+	"shine"			: 1
+}

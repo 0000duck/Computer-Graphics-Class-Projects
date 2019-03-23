@@ -1,0 +1,13 @@
+{
+	"name" 			 	: "Point Light",
+	"type" 			 	: "light",
+	"position" 		 	: [8, 5, 0, 1],
+	"diffuse_color"  	: [0.5, 0.5, 0.5],
+	"specular_color" 	: [0.5, 0.5, 0.5],
+	"constant_atten" 	: 0.5,
+	"linear_atten"	 	: 0.02,
+	"quad_atten"	 	: 0,
+	"spotlight_dir"	 	: [0, 0, 0],
+	"spotlight_cutoff" 	: 180,
+	"spotlight_exp"	 	: 1
+}

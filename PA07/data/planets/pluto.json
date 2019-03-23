@@ -1,0 +1,16 @@
+{
+  "name":"Pluto",
+  "model":"../data/models/earth.obj",
+  "texture":"../data/textures/pluto.jpg",
+  "rank":12.5,
+  "current_orbit_angle":2.4,
+  "diameter":0.1858,
+  "distance":463029.2,
+  "orbital_period":90560,
+  "rotation_period":-6.414,
+  "inclination_orbit":17.2,
+  "inclination_equator":122.5,
+  "orbital_eccentricity":0.244,
+  "moons":[],
+  "rings": []
+}

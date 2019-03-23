@@ -1,0 +1,9 @@
+{
+	"name" 		: "Board",
+	"type" 		: "mesh",
+	"model" 	: "../data/models/pinballTable.obj",
+	"texture" 	: "../data/textures/board.png",
+	"position" 	: [0, -1, 0],
+	"velocity" 	: [0, 0, 0],
+	"mass" 		: 0
+}

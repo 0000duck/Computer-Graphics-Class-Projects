@@ -1,0 +1,44 @@
+{
+  "name":"Mars",
+  "model":"../data/models/earth.obj",
+  "texture":"../data/textures/mars.jpg",
+  "rank":4,
+  "diameter":0.532455,
+  "distance":17866.1,
+  "orbital_period":687,
+  "rotation_period":1.0292,
+  "inclination_orbit":1.9,
+  "inclination_equator":25.2,
+  "orbital_eccentricity":0.094,
+  "moons":[
+    {
+      "name":"Phobos",
+      "model":"../data/models/earth.obj",
+      "texture":"../data/textures/phobos.jpg",
+      "rank":0.45,
+      "current_orbit_angle":0.2,
+      "diameter":0.0017,
+      "distance":0.735,
+      "orbital_period":0.318,
+      "rotation_period":0.318,
+      "inclination_orbit":1,
+      "inclination_equator":26.04,
+      "orbital_eccentricity":0.015
+    },
+    {
+      "name":"Deimos",
+      "model":"../data/models/earth.obj",
+      "texture":"../data/textures/deimos.jpg",
+      "rank":0.75,
+      "current_orbit_angle":0.7,
+      "diameter":0.00097,
+      "distance":1.839,
+      "orbital_period":1.263,
+      "rotation_period":1.263,
+      "inclination_orbit":0.93,
+      "inclination_equator":27.48,
+      "orbital_eccentricity":0.00033
+    }
+  ],
+  "rings": []
+}

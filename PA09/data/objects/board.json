@@ -1,0 +1,17 @@
+{
+	"name" 			: "Board",
+	"type" 			: "mesh",
+
+	"model" 		: "../data/models/pinballTable.obj",
+	"texture" 		: "../data/textures/board.png",
+	
+	"position" 		: [0, -1, 0],
+	"velocity" 		: [0, 0, 0],
+	"mass" 			: 0,
+	"restitution"	: 0.0,
+
+	"ambient"		: [1, 1, 1],
+	"diffuse"		: [1, 1, 1],
+	"specular"		: [0, 0, 0],
+	"shine"			: 1
+}

@@ -1,0 +1,16 @@
+{
+  "name":"Neptune",
+  "model":"../data/models/earth.obj",
+  "texture":"../data/textures/neptune.jpg",
+  "rank":11.5,
+  "current_orbit_angle":0.5,
+  "diameter":3.88,
+  "distance":352391,
+  "orbital_period":59800,
+  "rotation_period":0.6736,
+  "inclination_orbit":1.8,
+  "inclination_equator":28.3,
+  "orbital_eccentricity":0.011,
+  "moons":[],
+  "rings": []
+}

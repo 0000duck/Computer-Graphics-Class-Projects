@@ -1,0 +1,22 @@
+{
+  "name":"Uranus",
+  "model":"../data/models/earth.obj",
+  "texture":"../data/textures/uranus.jpg",
+  "rank":10.5,
+  "current_orbit_angle":1.8,
+  "diameter":4.007,
+  "distance":225188.147,
+  "orbital_period":30589,
+  "rotation_period":-0.719,
+  "inclination_orbit":0.8,
+  "inclination_equator":97.8,
+  "orbital_eccentricity":0.046,
+  "moons":[],
+  "rings": [
+    {
+      "model":"../data/models/uranusrings.obj",
+      "texture":"../data/textures/uranusRings.png",
+      "tilt":-80
+    }
+  ]
+}

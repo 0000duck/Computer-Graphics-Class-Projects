@@ -1,0 +1,18 @@
+{
+	"name" 			: "Sphere",
+	"type" 			: "sphere",
+
+	"model" 		: "../data/models/sphere.obj",
+	"texture" 		: "../data/textures/sphere.png",
+	
+	"shape"			: 1,	
+	"position" 		: [2, 2, 0],
+	"velocity" 		: [0, 0, 0],
+	"mass" 			: 1,
+	"restitution"	: 1.0,
+	
+	"ambient"		: [1, 1, 1],
+	"diffuse"		: [1, 1, 1],
+	"specular"		: [1, 1, 1],
+	"shine"			: 1
+}

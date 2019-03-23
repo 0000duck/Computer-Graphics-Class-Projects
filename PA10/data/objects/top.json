@@ -1,0 +1,8 @@
+{
+	"name" 			: "Top",
+	"type" 			: "box",
+
+	"shape"			: [50, 0.1, 50],
+	"position" 		: [-25, 2.6, -25],
+	"mass" 			: 0
+}

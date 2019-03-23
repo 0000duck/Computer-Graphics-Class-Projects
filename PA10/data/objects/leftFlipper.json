@@ -1,0 +1,17 @@
+{
+	"name" 			: "Left Flipper",
+	"type" 			: "mesh",
+
+	"model" 		: "../data/models/leftPaddle.obj",
+	"texture" 		: "../data/textures/cylinder.png",
+
+	"position" 		: [7.1, 1, 2.1],
+	"velocity" 		: [0, 0, 0],
+	"mass" 			: 1,
+	"restitution"	: 0.5,
+
+	"ambient"		: [1, 1, 1],
+	"diffuse"		: [1, 1, 1],
+	"specular"		: [1, 1, 1],
+	"shine"			: 1
+}

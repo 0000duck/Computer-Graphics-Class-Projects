@@ -1,0 +1,15 @@
+{
+  "name":"Venus",
+  "model":"../data/models/earth.obj",
+  "texture":"../data/textures/venus.jpg",
+  "rank":2,
+  "diameter":0.9489,
+  "distance":8482.283,
+  "orbital_period":224.7,
+  "rotation_period":244.0377,
+  "inclination_orbit":3.4,
+  "inclination_equator":177.4,
+  "orbital_eccentricity":0.007,
+  "moons":[],
+  "rings": []
+}

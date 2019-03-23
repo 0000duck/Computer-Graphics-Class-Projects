@@ -1,0 +1,17 @@
+{
+	"name" 			: "CylinderBumpers",
+	"type" 			: "mesh",
+
+	"model" 		: "../data/models/cylinderBumpers.obj",
+	"texture" 		: "../data/textures/cube.png",
+	
+	"position" 		: [0, 0, 0],
+	"velocity" 		: [0, 0, 0],
+	"mass" 			: 0,
+	"restitution"	: 1.1,
+
+	"ambient"		: [1, 1, 1],
+	"diffuse"		: [1, 1, 1],
+	"specular"		: [1, 1, 1],
+	"shine"			: 1
+}

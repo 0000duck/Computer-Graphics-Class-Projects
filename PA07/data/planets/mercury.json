@@ -1,0 +1,15 @@
+{
+  "name":"Mercury",
+  "model":"../data/models/earth.obj",
+  "texture":"../data/textures/mercury.jpg",
+  "rank":1,
+  "diameter":0.382,
+  "distance":4539.04,
+  "orbital_period":88,
+  "rotation_period":-58.895,
+  "inclination_orbit":7,
+  "inclination_equator":0.034,
+  "orbital_eccentricity":0.205,
+  "moons":[],
+  "rings": []
+}

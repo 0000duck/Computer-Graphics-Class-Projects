@@ -1,0 +1,18 @@
+{
+	"name" 			: "CylinderBumpers",
+	"type" 			: "cylinder",
+
+	"model" 		: "../data/models/cyl_bumper.obj",
+	"texture" 		: "../data/textures/cylinderBumper.png",
+
+	"shape"			: [0.7, 0.7, 0.7],
+	"position" 		: [-22.41078, 0, 3.55988],
+	"velocity" 		: [0, 0, 0],
+	"mass" 			: 0,
+	"restitution"	: 0.9,
+
+	"ambient"		: [1, 1, 1],
+	"diffuse"		: [1, 1, 1],
+	"specular"		: [1, 1, 1],
+	"shine"			: 1
+}
